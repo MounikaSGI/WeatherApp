@@ -9,25 +9,6 @@ import Foundation
 import CoreLocation
 import Combine
 
-//struct WeatherData: Codable {
-//    let current: CurrentWeather?
-//    let forecast: [ForecastWeather]?
-//    
-//    struct CurrentWeather: Codable {
-//        let temperature: Double?
-//        let condition: String?
-//        let locationName:String?
-//    }
-//
-//    struct ForecastWeather: Codable,Identifiable{
-//        var id = UUID()
-//        let date: String?
-//        let minTemperature: Double?
-//        let maxTemperature: Double?
-//        let condition: String?
-//    }
-//}
-
 struct WeatherResponce:Codable{
     let name:String
     let main:MainWeather

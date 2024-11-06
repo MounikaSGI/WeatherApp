@@ -94,7 +94,7 @@ struct WeatherForecastDayView:View {
             Text(forecast.date)
                 .font(.system(size: 14,weight: .bold,design: .default))
                 .foregroundColor(.white)
-            Image("cloud.sun.rain.fill")
+            Image(forecast.weather?.iconImageName() ?? "default_icon")
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 30, height: 30)
